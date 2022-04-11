@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+		
+	<!--  	
+		Exam exam1 = new LecExam(100,200,300);
+		
+		ArrayList<Exam> exams = new ArrayList<Exam>();
+		exams.add(new LecExam(10,20,30));
+		exams.add(exam1);
+		-->
+		
+		<bean id = "exam1" class="com.spring.diex5.LecExam" 
+		p:kor="100" p:eng="200" p:math="300"/>
+		
+		<bean id ="exams" class = "java.util.ArrayList">
+			<constructor-arg>
+				<list> <!-- 초기화를 하고 싶으면 이렇게 사용 하면 된다. -->
+					<bean class ="com.spring.diex5.LecExam"
+						p:kor="10" p:eng="20" p:math="30" />
+					<ref bean = "exam1" />
+				</list>
+			</constructor-arg>
+		</bean>
+		
+		<!-- 
+			Map<String, String> addrList = new HashMap<String, String>();
+			addrList.put("홍길동 ", "성동구");
+			addrList.put("홍길동2 ", "송파구 ");
+		 -->
+		 <bean id = "addrList" class = "com.spring.diex5.CollectionMap">
+		 	<property name="addrMap">
+		 		<map>
+		 			<entry>
+		 				<key><value>홍길동1</value></key>
+		 				<value>성동구</value>
+		 			</entry>
+		 			<entry>
+		 				<key><value>홍길동2</value></key>
+		 				<value>송파구 </value>
+		 			</entry>
+		 		</map>
+		 	</property>
+		 </bean>
+		 
+		 <bean id = "nameset" class = "com.spring.diex5.CollectionSet">
+		 	<property name="names">
+		 		<set value-type="java.lang.String">
+		 			<value>abcd</value>
+		 			<value>abc</value>
+		 			<value>abc</value>
+		 		</set>
+		 	</property>
+		 </bean>
+		 
+
+</beans>

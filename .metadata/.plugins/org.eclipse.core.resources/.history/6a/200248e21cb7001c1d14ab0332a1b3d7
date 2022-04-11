@@ -1,0 +1,27 @@
+package com.spring.diex8;
+
+public class MultipleLineExamPrint implements ExamConsole {
+	private Exam exam;
+		
+	public MultipleLineExamPrint(Exam exam) {
+		this.exam = exam;
+	}
+	
+	public MultipleLineExamPrint() {	
+	}
+	
+	@Override
+	public void setExam(Exam exam) {
+		System.out.println("MultipleLineExamPrint()->setExam(Exam exam) !!");
+		this.exam = exam;
+	}
+
+	@Override
+	public void print() {
+		System.out.println("total : " + exam.total());
+		System.out.println("avg : " + exam.avg());
+	}
+
+	
+
+}

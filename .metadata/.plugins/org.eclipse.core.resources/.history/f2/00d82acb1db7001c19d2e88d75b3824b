@@ -1,0 +1,26 @@
+package com.spring.diex7;
+
+public class OneLineExamPrint implements ExamConsole {
+	private Exam exam;
+		
+	public OneLineExamPrint(Exam exam) {		
+		this.exam = exam;
+	}
+	
+	public OneLineExamPrint() {		
+		System.out.println("OneLineExamPrint() ");
+	}
+		
+	@Override
+	public void setExam(Exam exam) {
+		this.exam = exam;
+		
+	}
+	
+	@Override
+	public void print() {
+		System.out.println("total : " + exam.total() + 
+				  		   ", avg : " + exam.avg());
+	}
+
+}

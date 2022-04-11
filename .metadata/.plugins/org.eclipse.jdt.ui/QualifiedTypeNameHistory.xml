@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.spring.diex3.MutipleLineExamPrint"/>
+<fullyQualifiedTypeName name="com.spring.diex3.OneLineExamPrint"/>
+<fullyQualifiedTypeName name="com.spring.diex3.ExamConsole"/>
+<fullyQualifiedTypeName name="com.spring.diex4.OneLineExamPrint"/>
+<fullyQualifiedTypeName name="com.spring.diex4.MutipleLineExamPrint"/>
+<fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
+<fullyQualifiedTypeName name="com.spring.diex4.ExamConsole"/>
+<fullyQualifiedTypeName name="com.spring.diex5.LecExam"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="java.util.Set"/>
+<fullyQualifiedTypeName name="java.util.HashSet"/>
+<fullyQualifiedTypeName name="com.spring.diex5.CollectionMap"/>
+<fullyQualifiedTypeName name="com.spring.diex5.CollectionSet"/>
+<fullyQualifiedTypeName name="com.spring.diex6.FriendsMap"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="java.util.Map.Entry"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
+<fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Qualifier"/>
+</qualifiedTypeNameHistroy>
