@@ -2,10 +2,10 @@
 <launchConfiguration type="org.eclipse.wst.server.ui.launchConfigurationType">
 <stringAttribute key="client-id" value="org.eclipse.wst.server.ui.web"/>
 <stringAttribute key="launchable-adapter-id" value="org.eclipse.jst.server.tomcat.web"/>
-<stringAttribute key="module-artifact" value="org.eclipse.jst.jee.server:DIEx///WEB-INF/classes/com/spring/diex8/OneLineExamPrint.java"/>
+<stringAttribute key="module-artifact" value="org.eclipse.jst.jee.server:BoardEx///WEB-INF/classes/com/spring/boardex/service/BoardClient.java"/>
 <stringAttribute key="module-artifact-class" value="org.eclipse.wst.server.core.util.WebResource"/>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
-<listEntry value="/DIEx"/>
+<listEntry value="/BoardEx"/>
 </listAttribute>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
 <listEntry value="4"/>
