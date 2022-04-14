@@ -1,5 +1,8 @@
 package com.spring.boardex.service;
 
-public interface BoardService {
+import com.spring.boardex.impl.BoardDo;
 
+public interface BoardService {
+	void insertBoard(BoardDo dbo);
+	
 }
