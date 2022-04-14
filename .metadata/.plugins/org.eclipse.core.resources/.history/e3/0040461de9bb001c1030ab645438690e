@@ -37,11 +37,7 @@ public class BoardDao {
 		}
 		JdbcUtil.closeConnection(rs, pstmt, conn);
 	}
-	
-
 	public ArrayList<BoardDo> getBoardList(){
-		conn = JdbcUtil.getConnection(); 
-		
 		ArrayList<BoardDo> aList = new ArrayList<BoardDo>();
 		String sql = "select * from board";
 		

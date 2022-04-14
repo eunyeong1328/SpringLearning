@@ -40,8 +40,6 @@ public class BoardDao {
 	
 
 	public ArrayList<BoardDo> getBoardList(){
-		conn = JdbcUtil.getConnection(); 
-		
 		ArrayList<BoardDo> aList = new ArrayList<BoardDo>();
 		String sql = "select * from board";
 		
