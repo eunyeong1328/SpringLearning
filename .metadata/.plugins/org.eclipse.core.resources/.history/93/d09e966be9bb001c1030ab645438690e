@@ -61,8 +61,6 @@ public class BoardDao {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
-		JdbcUtil.closeConnection(rs, pstmt, conn);
 		return aList;
 	}
 
