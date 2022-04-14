@@ -55,9 +55,9 @@ public class BoardDao {
 			System.out.println("getBoardList() 처리 완료!!");
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+			e.printStackTrace
 		return aList;
+		}
 	}
 
 }

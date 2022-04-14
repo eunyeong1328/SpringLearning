@@ -20,7 +20,8 @@ public class BoardServiceImpl implements BoardService{
 
 	@Override
 	public ArrayList<BoardDo> getBoardList() {
-		return dbao.getBoardList();
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }
