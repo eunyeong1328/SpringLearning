@@ -65,5 +65,45 @@ public class BoardDao {
 		JdbcUtil.closeConnection(rs, pstmt, conn);
 		return aList;
 	}
+	
+	public void updateBoard(BoardDo bdo) {
+		
+		conn = JdbcUtil.getConnection();
+		String sql = "update board set title=?,content=? where seq =?";
+		try {
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1,  bdo.getTitle());
+			pstmt.setString(2,  bdo.getContent());
+			pstmt.setInt(3,  bdo.getSeq());
+			pstmt.executeUpdate();
+			
+			JdbcUtil.closeConnection(rs, pstmt, conn);
+			
+			System.out.println("updateBoard() 贸府 肯丰!!");
+		}catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}
+	}
+	
+	public void deletBoard(BoardDo bdo) {
+		conn = JdbcUtil.getConnection();
+		String sql = "delete from board where seq =?";
+		
+		try {
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setInt(1, bdo.getSeq());
+			
+			pstmt.executeUpdate();
+			conn.close();
+			
+			JdbcUtil.closeConnection(rs, pstmt, conn);
+			
+			System.out.println("deleteBoard() 贸府 肯丰!!");
+		}catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}
+	}
 
 }

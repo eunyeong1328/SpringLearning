@@ -1,6 +1,0 @@
-package com.spring.diex7;
-
-public interface Exam {
-	public int total();
-	public float avg();
-}

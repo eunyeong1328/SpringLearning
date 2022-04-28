@@ -30,5 +30,27 @@ public class BoardClient {
 		for(BoardDo temp : aList) {
 			System.out.println(temp.toString());
 		}
+		
+		//글 수정
+//		BoardDo bdo = new BoardDo();
+//		bdo.setSeq(2);
+//		bdo.setTitle("글 제목 수정");
+//		bdo.setContent("글 내용 수정");
+//		bService.updateBoard(bdo);
+//		
+//		ArrayList<BoardDo> aList2 = bService.getBoardList();
+//		for(BoardDo temp : aList2) {
+//			System.out.println("(수정)-->" +temp.toString());
+//		}
+		
+		//글 삭제
+		BoardDo bdo = new BoardDo();
+		bdo.setSeq(3);
+		bService.deleteBoard(bdo);
+		
+		ArrayList<BoardDo> aList3 = bService.getBoardList();
+		for(BoardDo temp : aList3) {
+			System.out.println("(삭제)-->" +temp.toString());
+		}
 	}
 }

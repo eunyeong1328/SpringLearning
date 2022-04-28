@@ -5,10 +5,8 @@
 <fullyQualifiedTypeName name="com.spring.diex3.ExamConsole"/>
 <fullyQualifiedTypeName name="com.spring.diex4.OneLineExamPrint"/>
 <fullyQualifiedTypeName name="com.spring.diex4.MutipleLineExamPrint"/>
-<fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
 <fullyQualifiedTypeName name="com.spring.diex4.ExamConsole"/>
 <fullyQualifiedTypeName name="com.spring.diex5.LecExam"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="java.util.HashMap"/>
 <fullyQualifiedTypeName name="java.util.Set"/>
 <fullyQualifiedTypeName name="java.util.HashSet"/>
@@ -19,6 +17,20 @@
 <fullyQualifiedTypeName name="java.util.Map.Entry"/>
 <fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
 <fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
-<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
 <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Qualifier"/>
+<fullyQualifiedTypeName name="java.sql.DriverManager"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Repository"/>
+<fullyQualifiedTypeName name="java.sql.Connection"/>
+<fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+<fullyQualifiedTypeName name="java.sql.ResultSet"/>
+<fullyQualifiedTypeName name="com.spring.boardex.impl.BoardDao"/>
+<fullyQualifiedTypeName name="com.mysql.jdbc.JDBC4UpdatableResultSet"/>
+<fullyQualifiedTypeName name="com.spring.boardex.common.JdbcUtil"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+<fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
+<fullyQualifiedTypeName name="org.springframework.context.support.GenericXmlApplicationContext"/>
+<fullyQualifiedTypeName name="com.spring.boardex.service.BoardService"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="com.spring.boardex.impl.BoardDo"/>
 </qualifiedTypeNameHistroy>

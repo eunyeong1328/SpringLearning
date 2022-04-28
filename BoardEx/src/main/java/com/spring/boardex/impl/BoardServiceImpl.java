@@ -22,5 +22,13 @@ public class BoardServiceImpl implements BoardService{
 	public ArrayList<BoardDo> getBoardList() {
 		return dbao.getBoardList();
 	}
+	@Override
+	public void updateBoard(BoardDo bdo) {
+		dbao.updateBoard(bdo);
+	}
+	@Override
+	public void deleteBoard(BoardDo bdo) {
+		dbao.deletBoard(bdo);
+	}
 
 }
