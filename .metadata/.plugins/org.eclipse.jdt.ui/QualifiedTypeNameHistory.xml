@@ -25,12 +25,13 @@
 <fullyQualifiedTypeName name="java.sql.ResultSet"/>
 <fullyQualifiedTypeName name="com.spring.boardex.impl.BoardDao"/>
 <fullyQualifiedTypeName name="com.mysql.jdbc.JDBC4UpdatableResultSet"/>
-<fullyQualifiedTypeName name="com.spring.boardex.common.JdbcUtil"/>
 <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
 <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
 <fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
 <fullyQualifiedTypeName name="org.springframework.context.support.GenericXmlApplicationContext"/>
-<fullyQualifiedTypeName name="com.spring.boardex.service.BoardService"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="com.spring.boardex.common.JdbcUtil"/>
 <fullyQualifiedTypeName name="com.spring.boardex.impl.BoardDo"/>
+<fullyQualifiedTypeName name="com.spring.boardex.service.BoardService"/>
+<fullyQualifiedTypeName name="com.spring.boardex.service.BoardClient"/>
 </qualifiedTypeNameHistroy>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.3.xsd">
+
+	<context:component-scan base-package="com.spring.aopex" />
+	
+	<bean id = "log" class="com.spring.aopex.LogAdvice"/>
+	
+	<aop:config>						<!-- 패키지 모르는 것에 대해서  메소드 인자가 있거나 없는 거 다 포함-->
+		<aop:pointcut expression="execution(* com.spring.aopex..*Impl.*(..))" id="allPointcut" />
+		<aop:aspect ref = "log"><!-- 쉽게 원하는 코드를 넣다뺐다 가능-->
+			<aop:after pointcut-ref="allPointcut" method="printLog"/>
+		</aop:aspect>
+	</aop:config>
+	
+</beans>
