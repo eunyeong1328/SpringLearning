@@ -1,4 +1,0 @@
-127.0.0.1 - - [28/Apr/2022:19:23:05 +0900] "GET / HTTP/1.1" 404 807
-0:0:0:0:0:0:0:1 - - [28/Apr/2022:19:23:06 +0900] "GET /boardex/WEB-INF/classes/com/spring/boardex/service/BoardClient.java HTTP/1.1" 404 721
-127.0.0.1 - - [28/Apr/2022:19:41:48 +0900] "GET / HTTP/1.1" 404 807
-0:0:0:0:0:0:0:1 - - [28/Apr/2022:19:41:49 +0900] "GET /boardex/WEB-INF/classes/com/spring/boardex/service/BoardClient.java HTTP/1.1" 404 721
