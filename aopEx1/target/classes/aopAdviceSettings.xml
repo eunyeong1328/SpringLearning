@@ -12,15 +12,22 @@
 	<bean id = "before" class = "com.spring.aopex2.BeforeAdvice" /> <!--  before 객체가 만들어짐  -->
 	<bean id = "afterReturning" class = "com.spring.aopex2.AfterReturningAdvice" />
 	<bean id = "afterThrowing" class = "com.spring.aopex2.AfterThrowingAdvice" />
-	
+	<bean id = "after" class = "com.spring.aopex2.AfterAdvice" />
+	<bean id = "around" class = "com.spring.aopex2.AroundAdvice" />
+	 
 	<aop:config>
 		<aop:pointcut expression="execution(* com.spring.aopex2..*Impl.insert*(..))" id="insertPointcut"/>
 		<aop:pointcut expression="execution(* com.spring.aopex2..*Impl.update*(..))" id="updatePointcut"/>
 		
-		
-		<aop:aspect ref="afterThrowing"> <!-- 일부러 에러처리하려고 빠진게 했음  -->
-			<aop:after-throwing method="afterThrowingAdviceLog" pointcut-ref="insertPointcut"/>
+		<aop:aspect ref = "around">
+			<aop:around method = "aroundAdvice" pointcut-ref="insertPointcut" />
 		</aop:aspect>
+		<!-- <aop:aspect ref ="after">
+			<aop:after method="afterAdvice" pointcut-ref="insertPointcut"/>
+		</aop:aspect> -->
+		<!-- <aop:aspect ref="afterThrowing"> 일부러 에러처리하려고 빠진게 했음 
+			<aop:after-throwing method="afterThrowingAdviceLog" pointcut-ref="insertPointcut"/>
+		</aop:aspect> -->
 		<!--  before 객체안에 이것을 사용하겠다.  -->
 		
 	<!-- <aop:aspect ref = "afterReturning">
