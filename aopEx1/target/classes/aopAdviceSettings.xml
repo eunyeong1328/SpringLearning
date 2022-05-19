@@ -9,16 +9,18 @@
 
 	<context:component-scan base-package="com.spring.aopex2" />
 	
-	<bean id = "before" class = "com.spring.aopex2.BeforeAdvice" /> <!--  advice객체가 만들어짐  -->
+	<bean id = "before" class = "com.spring.aopex2.BeforeAdvice" /> <!--  before 객체가 만들어짐  -->
+	<bean id = "afterReturning" class = "com.spring.aopex2.AfterReturningAdvice" />
 	
 	<aop:config>
-	
 		<aop:pointcut expression="execution(* com.spring.aopex2..*Impl.insert*(..))" id="insertPointcut"/>
 		<aop:pointcut expression="execution(* com.spring.aopex2..*Impl.update*(..))" id="updatePointcut"/>
 		
-		<aop:aspect ref = "before">
-			<aop:before pointcut-ref = "insertPointcut" method="beforeLog"/>
+		<!--  before 객체안에 이것을 사용하겠다.  -->
+		
+		<aop:aspect ref = "afterReturning">
+			<!-- <aop:before pointcut-ref = "insertPointcut" method="beforeLog"/> -->
+			<aop:after-returning method="afterReturningAdviceLog" pointcut-ref="updatePointcut"/>
 		</aop:aspect>
-	
 	</aop:config>
 </beans>
