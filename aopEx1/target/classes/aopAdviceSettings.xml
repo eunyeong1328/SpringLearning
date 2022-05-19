@@ -11,16 +11,21 @@
 	
 	<bean id = "before" class = "com.spring.aopex2.BeforeAdvice" /> <!--  before 객체가 만들어짐  -->
 	<bean id = "afterReturning" class = "com.spring.aopex2.AfterReturningAdvice" />
+	<bean id = "afterThrowing" class = "com.spring.aopex2.AfterThrowingAdvice" />
 	
 	<aop:config>
 		<aop:pointcut expression="execution(* com.spring.aopex2..*Impl.insert*(..))" id="insertPointcut"/>
 		<aop:pointcut expression="execution(* com.spring.aopex2..*Impl.update*(..))" id="updatePointcut"/>
 		
+		
+		<aop:aspect ref="afterThrowing"> <!-- 일부러 에러처리하려고 빠진게 했음  -->
+			<aop:after-throwing method="afterThrowingAdviceLog" pointcut-ref="insertPointcut"/>
+		</aop:aspect>
 		<!--  before 객체안에 이것을 사용하겠다.  -->
 		
-		<aop:aspect ref = "afterReturning">
-			<!-- <aop:before pointcut-ref = "insertPointcut" method="beforeLog"/> -->
+	<!-- <aop:aspect ref = "afterReturning">
+			<aop:before pointcut-ref = "insertPointcut" method="beforeLog"/>
 			<aop:after-returning method="afterReturningAdviceLog" pointcut-ref="updatePointcut"/>
-		</aop:aspect>
+		</aop:aspect> -->
 	</aop:config>
 </beans>
