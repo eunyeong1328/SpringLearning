@@ -7,4 +7,5 @@ public interface BoardService {
 	void updateBoard();
 	void insertBoardDo(BoardDo bdo);
 	void insertBoardExcept();
+	BoardDo insertBoardReturn(BoardDo bdo);
 }

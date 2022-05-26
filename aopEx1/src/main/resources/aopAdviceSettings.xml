@@ -16,15 +16,21 @@
 	<bean id = "around" class = "com.spring.aopex2.AroundAdvice" />
 	 
 	<aop:config>
+		<aop:pointcut expression="execution(* com.spring.aopex2..*Impl.insertBoardReturn(..))" id="insertReturnPointcut"/>
 		<aop:pointcut expression="execution(* com.spring.aopex2..*Impl.insertBoardExcept(..))" id="insertExceptPointcut"/>
 		<aop:pointcut expression="execution(* com.spring.aopex2..*Impl.insertBoardDo(..))" id="insertDoPointcut"/>
 		<aop:pointcut expression="execution(* com.spring.aopex2..*Impl.insert*(..))" id="insertPointcut"/>
 		<aop:pointcut expression="execution(* com.spring.aopex2..*Impl.update*(..))" id="updatePointcut"/>
 		
-		
-		<aop:aspect ref = "afterThrowing">
-			<aop:after-throwing method = "afterThrowingLogExcept" pointcut-ref="insertExceptPointcut" throwing="exceptObj" />
+		<aop:aspect ref = "around">
+			<aop:around method = "aroundAdviceDo" pointcut-ref="insertReturnPointcut" />
 		</aop:aspect>
+		<!-- <aop:aspect ref = "afterReturning">
+			<aop:after-returning method = "afterReturningAdviceLogDo" pointcut-ref="insertReturnPointcut" returning="returnObj" />
+		</aop:aspect> -->
+		<!-- <aop:aspect ref = "afterThrowing">
+			<aop:after-throwing method = "afterThrowingLogExcept" pointcut-ref="insertExceptPointcut" throwing="exceptObj" />
+		</aop:aspect> -->
 		<!-- <aop:aspect ref = "around">
 			<aop:around method = "aroundAdvice" pointcut-ref="insertPointcut" />
 		</aop:aspect>

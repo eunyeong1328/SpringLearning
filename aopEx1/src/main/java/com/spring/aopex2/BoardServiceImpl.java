@@ -38,4 +38,10 @@ public class BoardServiceImpl implements BoardService{
 			throw new IllegalArgumentException("seq가 0인 에러 발생됨!!");
 		}
 	}
+
+	@Override
+	public BoardDo insertBoardReturn(BoardDo bdo) {
+		System.out.println("[핵심관심영역 코드] insertBoardReturn() 실행");
+		return bdo;
+	}
 }

@@ -10,11 +10,12 @@ public class BoardMain {
 		
 		BoardService bService = (BoardService) context.getBean("boardService");
 		
-//		BoardDo bdo = new BoardDo();
-//		bdo.setSeq(1);
-//		bdo.setTitle("title");
-//		bdo.setWriter("writer");
-//		bdo.setContent("content");
+		BoardDo bdo = new BoardDo();
+		bdo.setSeq(1);
+		bdo.setTitle("title");
+		bdo.setWriter("writer");
+		bdo.setContent("content");
+		bService.insertBoardReturn(bdo);
 		
 		bService.insertBoardExcept();
 		bService.updateBoard();
