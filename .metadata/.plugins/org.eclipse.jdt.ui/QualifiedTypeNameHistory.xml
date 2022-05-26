@@ -37,4 +37,6 @@
 <fullyQualifiedTypeName name="com.spring.aopex.BoardService"/>
 <fullyQualifiedTypeName name="org.springframework.context.support.GenericXmlApplicationContext"/>
 <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
+<fullyQualifiedTypeName name="java.lang.IllegalArgumentException"/>
+<fullyQualifiedTypeName name="org.aspectj.lang.ProceedingJoinPoint"/>
 </qualifiedTypeNameHistroy>

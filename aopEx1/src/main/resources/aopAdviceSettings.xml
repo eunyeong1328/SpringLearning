@@ -16,12 +16,21 @@
 	<bean id = "around" class = "com.spring.aopex2.AroundAdvice" />
 	 
 	<aop:config>
+		<aop:pointcut expression="execution(* com.spring.aopex2..*Impl.insertBoardExcept(..))" id="insertExceptPointcut"/>
+		<aop:pointcut expression="execution(* com.spring.aopex2..*Impl.insertBoardDo(..))" id="insertDoPointcut"/>
 		<aop:pointcut expression="execution(* com.spring.aopex2..*Impl.insert*(..))" id="insertPointcut"/>
 		<aop:pointcut expression="execution(* com.spring.aopex2..*Impl.update*(..))" id="updatePointcut"/>
 		
-		<aop:aspect ref = "around">
+		
+		<aop:aspect ref = "afterThrowing">
+			<aop:after-throwing method = "afterThrowingLogExcept" pointcut-ref="insertExceptPointcut" throwing="exceptObj" />
+		</aop:aspect>
+		<!-- <aop:aspect ref = "around">
 			<aop:around method = "aroundAdvice" pointcut-ref="insertPointcut" />
 		</aop:aspect>
+		<aop:aspect ref = "before">before객체 안에 beforeLogDo 메서드 실행
+			<aop:before method="beforeLogDo" pointcut-ref="insertDoPointcut"/>
+		</aop:aspect> -->
 		<!-- <aop:aspect ref ="after">
 			<aop:after method="afterAdvice" pointcut-ref="insertPointcut"/>
 		</aop:aspect> -->
