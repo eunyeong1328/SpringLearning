@@ -3,10 +3,11 @@ package com.spring.dog.impl;
 public class DogDO {
 
 	private int num;
-	private String host;
-	private String dogName;
-	private String dogType;
-	private String dogGender;
+	private String host;	//주인
+	private String dogName;	//이름
+	private String dogType;	//종류
+	private String dogGender;	//성별
+	private String dogInoculation; //접종
 	
 	public int getNum() {
 		return num;
@@ -38,5 +39,12 @@ public class DogDO {
 	public void setDogGender(String dogGender) {
 		this.dogGender = dogGender;
 	}
+	public String getDogInoculation() {
+		return dogInoculation;
+	}
+	public void setDogInoculation(String dogInoculation) {
+		this.dogInoculation = dogInoculation;
+	}
+	
 	
 }

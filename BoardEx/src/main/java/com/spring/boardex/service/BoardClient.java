@@ -19,17 +19,17 @@ public class BoardClient {
 		BoardService bService = (BoardService)context.getBean("boardService");//BoardService객체 가져오기
 		
 		//글 목록 저장하기
-//		BoardDo bdo = new BoardDo();
-//		bdo.setTitle("Title");
-//		bdo.setWriter("Writer");
-//		bdo.setContent("content");
-//		bService.insertBoard(bdo);
+		BoardDo bdo = new BoardDo();
+		bdo.setTitle("Title");
+		bdo.setWriter("Writer");
+		bdo.setContent("content");
+		bService.insertBoard(bdo);
 		
 		//글 목록 보기
-		ArrayList<BoardDo> aList = bService.getBoardList();
-		for(BoardDo temp : aList) {
-			System.out.println(temp.toString());
-		}
+//		ArrayList<BoardDo> aList = bService.getBoardList();
+//		for(BoardDo temp : aList) {
+//			System.out.println(temp.toString());
+//		}
 		
 		//글 수정
 //		BoardDo bdo = new BoardDo();
@@ -44,13 +44,13 @@ public class BoardClient {
 //		}
 		
 		//글 삭제
-		BoardDo bdo = new BoardDo();
-		bdo.setSeq(3);
-		bService.deleteBoard(bdo);
-		
-		ArrayList<BoardDo> aList3 = bService.getBoardList();
-		for(BoardDo temp : aList3) {
-			System.out.println("(삭제)-->" +temp.toString());
-		}
+//		BoardDo bdo = new BoardDo();
+//		bdo.setSeq(3);
+//		bService.deleteBoard(bdo);
+//		
+//		ArrayList<BoardDo> aList3 = bService.getBoardList();
+//		for(BoardDo temp : aList3) {
+//			System.out.println("(삭제)-->" +temp.toString());
+//		}
 	}
 }

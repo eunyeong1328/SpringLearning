@@ -9,3 +9,7 @@ D:\eunyoung_workspace\spring\workspace_202201\.metadata\.plugins\org.eclipse.jst
 \BoardWeb\src\main\java
 D:\eunyoung_workspace\spring\workspace_202201\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3438139319.index
 \aopEx1\src\main\java
+D:\eunyoung_workspace\spring\workspace_202201\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\827260414.index
+\assignment\src\main\java
+D:\eunyoung_workspace\spring\workspace_202201\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2868330964.index
+\assignment2\src\main\java

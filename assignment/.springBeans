@@ -7,7 +7,6 @@
 	</configSuffixes>
 	<enableImports><![CDATA[true]]></enableImports>
 	<configs>
-		<config>src/main/resources/DogSettings.xml</config>
 		<config>src/main/resources/DogSettingsAno.xml</config>
 	</configs>
 	<autoconfigs>

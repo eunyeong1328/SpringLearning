@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd">
+
+	<bean id="DogInfoDAO" class="com.spring.dog.impl.DogInfoDAO" />
+
+	<bean id="DogService" class="com.spring.dog.impl.DogServiceImpl">
+		<property name="ddao" ref="DogInfoDAO"/>
+	</bean>
+	<bean id="ddooTwo" class="com.spring.dog.impl.DogDO">
+		<property name="host" value="crisTwo" />
+		<property name="dogName" value="chocoTwo" />
+		<property name="dogType" value="Bulldog" />
+		<property name="dogGender" value="male" />
+		<property name="dogInoculation" value="Tdap" />
+	</bean>
+
+	<bean id="ddooThree" class="com.spring.dog.impl.DogDO">
+		<property name="host" value="crisThree" />
+		<property name="dogName" value="banaanThree" />
+		<property name="dogType" value="Poodle" />
+		<property name="dogGender" value="female" />
+		<property name="dogInoculation" value="DHPPL" />
+	</bean>
+</beans>

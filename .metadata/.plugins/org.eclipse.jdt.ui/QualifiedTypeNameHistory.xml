@@ -19,7 +19,6 @@
 <fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
 <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Qualifier"/>
 <fullyQualifiedTypeName name="java.sql.DriverManager"/>
-<fullyQualifiedTypeName name="org.springframework.stereotype.Repository"/>
 <fullyQualifiedTypeName name="java.sql.Connection"/>
 <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
 <fullyQualifiedTypeName name="java.sql.ResultSet"/>
@@ -30,7 +29,6 @@
 <fullyQualifiedTypeName name="com.spring.boardex.impl.BoardDo"/>
 <fullyQualifiedTypeName name="com.spring.boardex.service.BoardService"/>
 <fullyQualifiedTypeName name="com.spring.boardex.service.BoardClient"/>
-<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
 <fullyQualifiedTypeName name="com.spring.aopex.LogAdvice"/>
 <fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
 <fullyQualifiedTypeName name="org.springframework.context.support.GenericApplicationContext"/>
@@ -43,4 +41,10 @@
 <fullyQualifiedTypeName name="java.lang.Exception"/>
 <fullyQualifiedTypeName name="org.aspectj.lang.JoinPoint"/>
 <fullyQualifiedTypeName name="com.spring.aopex2.BoardDo"/>
+<fullyQualifiedTypeName name="com.spring.dog.common.JdbcUtil"/>
+<fullyQualifiedTypeName name="com.spring.dog.impl.DogInfoDAO"/>
+<fullyQualifiedTypeName name="com.spring.dog.impl.DogDO"/>
+<fullyQualifiedTypeName name="com.spring.dog.service.DogService"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Repository"/>
 </qualifiedTypeNameHistroy>

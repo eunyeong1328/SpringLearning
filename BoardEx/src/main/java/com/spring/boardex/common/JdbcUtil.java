@@ -17,9 +17,8 @@ public class JdbcUtil {
 	public static Connection getConnection() {
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
-			System.out.println("MYSQL DB 로딩 완료");
-			
 			conn = DriverManager.getConnection(url,id,password);
+			System.out.println("MYSQL DB 로딩 완료");
 			return conn;
 		}catch (Exception e) {
 			e.printStackTrace();
