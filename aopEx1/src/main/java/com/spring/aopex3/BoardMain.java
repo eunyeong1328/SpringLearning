@@ -16,11 +16,12 @@ public class BoardMain {
 		bdo.setTitle("title");
 		bdo.setWriter("writer");
 		bdo.setContent("content");
-//		bService.insertBoardDo(bdo);
-//		bService.insertBoard();
+		bService.insertBoardDo(bdo);
+		bService.insertBoard();
+		bService.updateBoard();
 //		bService.insertBoardExcept();
 		bService.insertBoardReturn(bdo);
-		bService.updateBoard();
+		
 	}
 
 }

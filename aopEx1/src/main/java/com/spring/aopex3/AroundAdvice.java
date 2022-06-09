@@ -15,7 +15,7 @@ import org.springframework.util.StopWatch;
 //</aop:aspect>
 
 @Service
-@Aspect
+//@Aspect
 public class AroundAdvice {
 	public Object aroundAdvice(ProceedingJoinPoint pjp) throws Throwable {
 		

@@ -15,7 +15,7 @@ import org.springframework.stereotype.Service;
 //</aop:aspect> 
 
 @Service
-//@Aspect
+@Aspect
 public class BeforeAdvice {
 	
 	@Pointcut("execution(* com.spring.aopex3..*Impl.insertBoardReturn(..))")
@@ -28,7 +28,7 @@ public class BeforeAdvice {
 	}
 
 		
-	@Before("insertDoPointcut()")
+	@Before("PointcutCommon.insertDoPointcut()")
 	public void beforeLogDo(JoinPoint jp) {
 		System.out.println("[beforeAdviceDo] 비즈니스 로직 수행 전에 실행(JointPoint)!! ");
 		
