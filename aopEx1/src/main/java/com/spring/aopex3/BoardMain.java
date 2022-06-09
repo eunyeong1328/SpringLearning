@@ -17,10 +17,10 @@ public class BoardMain {
 		bdo.setWriter("writer");
 		bdo.setContent("content");
 		bService.insertBoardDo(bdo);
-		bService.insertBoard();
+//		bService.insertBoard();
 		bService.updateBoard();
 //		bService.insertBoardExcept();
-		bService.insertBoardReturn(bdo);
+//		bService.insertBoardReturn(bdo);
 		
 	}
 

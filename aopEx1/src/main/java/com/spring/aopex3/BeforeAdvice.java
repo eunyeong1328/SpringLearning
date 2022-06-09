@@ -15,13 +15,13 @@ import org.springframework.stereotype.Service;
 //</aop:aspect> 
 
 @Service
-@Aspect
+//@Aspect
 public class BeforeAdvice {
 	
-	@Pointcut("execution(* com.spring.aopex3..*Impl.insertBoardReturn(..))")
-	public void insertDoPointcut() {
-		
-	}
+//	@Pointcut("execution(* com.spring.aopex3..*Impl.insertBoardReturn(..))")
+//	public void insertDoPointcut() {
+//		
+//	}
 	
 	public void beforeLog() {
 		System.out.println("[beforeAdvice] 비즈니스 로직 수행 전에 실행!!");
